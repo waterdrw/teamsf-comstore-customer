@@ -1,0 +1,1056 @@
+.ui-panel.ui-panel-open {
+    position:fixed;
+}
+.ui-panel-inner {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0px;
+}
+* {
+	text-shadow:none;
+}
+body{
+	color: #777;
+	background-color: #f8f8f8;
+}
+
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.ui-btn.ui-btn-right {
+	border:none;
+	border-radius: 0px;
+}
+.ui-btn.ui-btn-right i{
+	color:white;
+	text-decoration: none;
+	text-shadow:none;
+}
+.ui-page .ui-header .ui-btn.ui-btn-right .ui-btn-inner {
+    color      : black; 
+    text-decoration: none;
+	text-shadow:none;   
+	background: rgb(84,168,219); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(84,168,219) 0%, rgb(84,168,219) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(84,168,219)), color-stop(100%,rgb(84,168,219))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(84,168,219)', endColorstr='rgb(84,168,219)',GradientType=0 ); /* IE6-9 */
+}
+.custom-navbar ul li a.ui-btn-active {
+    background: linear-gradient(#fff, #fff) repeat scroll 0 0 #fff !important;
+    background: #fff; /* Old browsers */
+    background: linear-gradient(#fff, #fff) repeat scroll 0 0 #fff !important; /* FF3.6+ */
+    background: -webkit-linear-gradient(#fff, #fff) repeat scroll 0 0 #fff !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(#fff, #fff) repeat scroll 0 0 #fff !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(#fff, #fff) repeat scroll 0 0 #fff !important; /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-9 */       
+    color: #2c3e50;
+    text-decoration: none;
+    text-shadow:none;
+}
+
+/* 콤보존 패널 관련 시작 */
+#list-street{
+	margin-top:5px;
+}
+#panel-street h1 {
+	text-align: center;
+}
+.ui-collapsible-content{
+	padding:0px;
+}
+.list-location {
+	border-bottom: 1px solid #ecf0f1;
+	font-size: 15px;
+}
+.list-location:nth-child(1){
+	border-top: 1px solid #ecf0f1;
+}
+.list-location p {
+	padding: 10px;
+}
+.list-location p i{
+	float:right;
+	color: #bdc3c7;
+}
+.shops-in-location{
+	display: block;
+	padding:10px;	
+	text-decoration: none;
+	background-color: #ecf0f1;
+	font-size:8pt;
+	color: #34495e;
+	text-shadow:none;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+}
+.shops-in-location.currentZone{
+	color: #2980b9;
+}
+.shops-in-location i {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.shops-in-location:nth-child(1){
+	border-top: 1px solid #bdc3c7;
+}
+.shops-in-location:nth-last-child(1){
+	border-bottom: none;
+}
+
+/* 콤보존 패널 관련 끝 */
+.row::before, .row::after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.row:after{
+	clear: both;
+}
+[class*="span"]{
+	float:left;
+}
+.text-center {
+	text-align: center;
+}
+.ui-content{
+	padding:0!important;
+}
+.area-padding{
+	padding:10px;
+}
+.area-divider{
+	background-color: #555;
+	padding:5px;
+	color: #ffffff;
+	text-shadow:none;
+	font-weight: 100;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	box-shadow: 0px 2px 4px #333;
+	-moz-box-shadow: 0px 2px 4px #333;
+	-webkit-box-shadow: 0px 2px 4px #333;
+	border-top:1px solid #333;
+}
+
+.area-notice{
+	padding:5px 10px;
+	color:#000;
+	font-weight: bold;
+}
+.area-notice .strong{
+	color:red;
+}
+.nav-glyphish-example .ui-btn-inner{
+	padding-bottom:0px !important;
+}
+.menu1-header {
+	background-size: 100% auto;
+	background-color: rgb(84,168,219);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(84,168,219)),to(rgb(84,168,219)));
+	background-image: -webkit-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -moz-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -ms-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -o-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: linear-gradient(rgb(84,168,219),rgb(84,168,219));
+}
+.ui-header .ui-title, .ui-footer .ui-title{
+	margin: 0.3em 16% 0.3em
+}
+.menu1-header h1{
+	color: #fff;
+	text-decoration: none;
+	font-size: 23px !important;
+	text-shadow:none
+}
+#header-coms{
+	background-image: linear-gradient(bottom, rgb(194,194,194) 0%, rgb(235,235,235) 54%);
+	background-image: -o-linear-gradient(bottom, rgb(194,194,194) 0%, rgb(235,235,235) 54%);
+	background-image: -moz-linear-gradient(bottom, rgb(194,194,194) 0%, rgb(235,235,235) 54%);
+	background-image: -webkit-linear-gradient(bottom, rgb(194,194,194) 0%, rgb(235,235,235) 54%);
+	background-image: -ms-linear-gradient(bottom, rgb(194,194,194) 0%, rgb(235,235,235) 54%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(194,194,194)),
+		color-stop(0.54, rgb(235,235,235))
+	);
+	color:#000;
+	font-size: 15px;
+	text-shadow:none;
+	padding-left: 10px;
+
+}
+.list-shop{
+	margin: 8px;
+	border-radius: 10px;
+	border: 1px solid #bdc3c7;
+	box-shadow: 0px 1px 1px #bdc3c7;
+	-moz-box-shadow: 0px 1px 1px #bdc3c7;
+	-webkit-box-shadow: 0px 1px 1px #bdc3c7;
+	background-color: #ffffff;
+	padding:10px;
+	-webkit-transform: translateZ(0px);
+}
+.list-shop a
+{
+	text-decoration: none;
+	display: block;
+}
+
+.list-shop img{
+	width: 65px;
+	height: 54px;
+	border-radius: 6px;
+	float:left;
+	margin-right: 10px;
+	border: 1px solid #333;
+}
+.list-shop p{
+	font-size: 12px;
+	font-weight: normal;
+	padding: 1px;
+	color: #34495e;
+}
+.shop-info p:first-of-type {
+	font-size: 15px;
+	color:#2c3e50;
+}
+.shop-info{	
+	width: 75%;
+}
+.combo-timer {
+	border: 1px solid #888;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	width: 25%;
+	padding: 5px;
+	text-align: center;
+}
+.combo-timer i{
+	font-size: 13px;
+	color: #2c3e50;
+}
+.list-shop .list-divider{
+	margin: 5px 0px 5px 0px;
+}
+.list-shop hr,
+.area-register hr{
+	margin: 0px;
+	border: 0px;
+	border-top: 1px solid #d8d8d8;
+	margin: 3px 0px 3px 0px;
+}
+.header-combo{
+	background-color: #888;
+	border-radius: 5px;
+	color: #fff;
+	padding:2% 3%;
+	font-size: 10px;
+	text-shadow:none;
+	font-weight: bolder;
+	text-align: center;
+	width: 65px;
+}
+.header-combo2{
+	background-color: red;
+	border-radius: 5px;
+	color: #fff;
+	padding:3px;
+	font-size: 10px;
+	text-shadow:none;
+	font-weight: bolder;
+	text-align: center;
+}
+.header-combo3{
+	background-color: #888;
+	border-radius: 5px;
+	color: #fff;
+	padding:3px;
+	font-size: 10px;
+	text-shadow:none;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.combo-progress{
+	color: #7f8c8d;
+	width:72%;
+	margin: 0 0 0 5%;
+}
+.combo-progress2{
+	color: gray;
+	width:100%;
+	margin: 0 0 10px;
+	padding: 8px 3px 8px 3px;
+	border: 1px solid #f8f8f8;
+	border-radius: 15px;
+	box-shadow: 0px 1px 5px #a8a8a8;
+	-moz-box-shadow: 0px 1px 5px #a8a8a8;
+	-webkit-box-shadow: 0px 1px 5px #a8a8a8;
+}
+
+.with-line{
+	background: url('../img/bg-combo-progress.png') 0 2px repeat-x;
+}
+.combo-box{
+	font-size: 20px;
+	width: 20%;	
+	line-height: 0px;
+	text-align: center;
+	display: inline-block;
+}
+.combo-progress2 .combo-box {
+	font-size: 28px;
+	width: 19%;
+}
+.combo-box .icon-gift{
+	background-color: #d3cec4;
+	padding: 1px 3px 1px;
+	border-radius: 5px;
+}
+
+.combo-text{
+	font-size:10px;
+	line-height: 13px;
+	display: block;
+}
+.combo-progress .active,
+.combo-progress2 .active{
+	color:#e74c3c;
+}
+.combo-progress .active .icon-gift
+.combo-progress2 .active .icon-gift{
+	color:#e74c3c;
+}
+
+
+.notice-near-shop{
+	padding: 5px;
+	border: 1px solid #a8a8a8;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 10px;
+}
+.notice-near-shop i{
+	color: red;
+	font-size: 12px;
+}
+.area-shop-info .span{
+	width:50%;
+}
+.area-shop-info img{
+	width: 95%;
+	height: auto;
+	margin-right: 10px
+}
+.area-shop-info p,
+.area-member-info p{
+	font-weight: bold;
+	color: #000;
+	line-height: 23px;
+}
+.area-shop-info p span{
+	color: #333;
+	font-weight: normal;
+}
+.area-shop-more {
+	text-align: center;
+	margin-bottom: 10px;
+}
+/*상점 정보 확인 시 콤보 서비스에 대한 부분 START*/
+#area-shop-benefit{
+	padding: 5px 0px 5px 0px;
+}
+.list-shop-benefits{
+	list-style: none;
+}
+.list-shop-benefit{	
+	margin: 5px 10px 0px 10px;
+	padding: 3px 10px 3px 10px;
+	border-radius: 13px;
+	/*box-shadow: 0px 1px 5px #a8a8a8;
+	-moz-box-shadow: 0px 1px 5px #a8a8a8;
+	-webkit-box-shadow: 0px 1px 5px #a8a8a8;*/
+}
+.list-shop-benefit .combo-count{
+	font-size: 13px;
+}
+.list-shop-benefit.type0,
+.list-shop-benefit.type1,
+.list-shop-benefit.type2,
+.list-shop-benefit.type3,
+.list-shop-benefit.type4,
+.list-shop-benefit.type5,
+.list-shop-benefit.type6,
+.list-shop-benefit.type7,
+.list-shop-benefit.type8,
+.list-shop-benefit.type9{
+	border: 3px solid #95a5a6;
+	color: #95a5a6;
+	font-weight: bold;
+}
+.list-shop-benefit .benefit-desc{
+	font-size: 13px;
+	text-overflow: ellipsis;
+}
+.list-shop-benefit .benefit-desc2{
+	font-size: 13px;
+	text-overflow: ellipsis;
+	color: #2c3e50;
+}
+.list-shop-benefit .benefit-type{
+	float:right;
+	text-shadow:none;
+	font-weight: bold;
+}
+.benefit-type.type0,
+.benefit-type.type1,
+.benefit-type.type2{
+	color: #e74c3c;
+}
+.benefit-type.type3,
+.benefit-type.type4{
+	color: #27ae60;
+}
+.benefit-type.type5,
+.benefit-type.type6{
+	color: #2980b9;
+}
+.benefit-type.type7,
+.benefit-type.type8,
+.benefit-type.type9{
+	color: #f39c12;
+}
+/* 상점 콤보 서비스에 대한 CSS END*/
+.area-shop-combo{
+	padding:10px 10px 10px 10px;
+}
+.area-shop-combo .shop-combo,
+.area-shop-combo .shop-combo-notice{
+	box-shadow: 0px 1px 5px #a8a8a8;
+	-moz-box-shadow: 0px 1px 5px #a8a8a8;
+	-webkit-box-shadow: 0px 1px 5px #a8a8a8;
+	padding:5px;
+	border-radius: 5px;
+	border: 1px solid ghostwhite;
+
+}
+
+.area-shop-combo .shop-combo .icon-combo{
+	text-align: center;
+}
+.area-shop-combo .shop-combo .combo-box{
+	margin: 1% 2% 0px 2%;
+	font-size: 25px;
+	width: 15%;
+}
+.area-shop-combo .shop-combo .combo-text{
+	line-height: 12px
+}
+.shop-combo-notice{
+	margin-top: 5px;
+}
+.combo-notice p{
+	margin-left: 10px;
+	color: gray;
+	font-size:10px;
+}
+.left-combo-text{
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+#btn-buy{
+	margin-top: 10px;
+}
+#btn-buy i{
+	color: gold;
+}
+.area-shop-menu{
+	padding:5px;
+	width: 100%;
+}
+.area-shop-menu img{
+	width: 100%;
+}
+.area-shop-location{
+	padding: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+#content-location #shop-address{
+	padding: 5px;
+	text-shadow:none;
+}
+
+.banner-coupon,
+.banner-coupon2{
+	background-color: gray;
+	padding: 5px;
+	width: 23%;
+	margin-right: 8px;
+	text-align: center;
+	border-radius: 5px;
+}
+.banner-coupon.active,
+.banner-coupon2.active{
+	background-color: red;
+}
+.banner-coupon.active.main,
+.banner-coupon2.active.main{
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+}
+.banner-coupon2.active.main #shop-name{
+	color: #428bca;
+	border-bottom: 1px solid #999;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+.banner-coupon.active i{
+	color:gold;
+}
+.banner-coupon:nth-child(4){
+	margin-right: 0px;
+}
+.banner-inner-coupon{
+	background-color: #fff;
+	border-radius: 5px;
+	border-bottom-right-radius: 20px;
+	padding: 5px;
+	box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-webkit-box-shadow: 0px 0px 5px #333;
+}
+.banner-inner-coupon i{
+	font-size:25px;
+}
+.banner-inner-coupon img{
+	width: 80px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin-right: 10px;
+}
+.banner-inner-coupon hr{
+	border-style: dotted solid;
+	margin: 2px;
+}
+
+.area-price-info{
+	text-align: center;
+}
+.area-price-info p{
+	color: #333;
+	font-weight: bold;
+}
+.area-price-info .icon-money{
+	color: gold;
+}
+.area-price-info #buy-discount-price{
+	color: #428bca;
+}
+.area-price-info #buy-price{
+	text-decoration:line-through;
+}
+.area-price-info a i {
+	color: gold;
+	font-size: 15px;
+}
+
+.area-coms-friends{
+	text-align: center;
+}
+
+.area-coms-friends h1{
+	color: #428bca;
+	margin-top: 200px;
+}
+
+.nav-comstory{
+	text-align: center;
+}
+.nav-comstory img{
+	width: 70%;
+}
+.banner-gift{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.banner-gift-inner{
+	width:23%;
+	text-align: center;
+	margin-right: 5px;
+}
+.banner-gift-inner::nth-child(4){
+	margin-right: 0px;
+}
+.banner-gift-inner i{
+	color: #428bca;
+	font-size:50px;
+	padding: 5px 10px 5px 10px;
+	background-color: #fff;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+.banner-gift-inner p{
+	margin-top:10px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/* 마이콤스 */
+
+.area-member-info .span{
+	width: 46%;
+	margin-right: 10px;
+}
+.area-member-info .member-info-text{
+	font-size:12px;
+}
+.area-member-info .span::nth-child(1){
+	margin-right: 0px;
+}
+.area-member-info p{
+	color: #2980b9;
+	text-align: center;
+}
+.area-member-info i{
+	color: #2980b9
+}
+.area-member-info img{
+	width: 100%;	
+	border: 1px solid #a8a8a8;
+	border-radius: 6px;
+	background-color: #fff;
+}
+.area-heart-cash{
+	border: 1px solid #a8a8a8;
+	border-radius: 6px;
+	background-color: #fff;
+}
+
+.area-heart-cash .area-heart-top{
+	padding: 10px;
+	border-bottom: 1px solid #a8a8a8;
+	font-size:15px;
+	text-align: left;
+}
+.area-heart-cash .area-heart-top .icon-plus{
+	color: #fff;
+	background-color: #428bca;
+	border-radius: 20px;
+	padding: 5px;
+}
+.area-heart-cash .area-heart-bottom{
+	padding: 10px;
+	font-size:15px;
+}
+.area-heart-cash .area-heart-bottom .icon-heart{
+	color: gold;
+}
+
+.area-member-info .member-grade{
+	font-size: 18px;
+}
+
+table.mycoms-info {
+	padding:10px;
+	border: 1px solid #a8a8a8;
+	border-radius: 6px;
+	width: 100%;
+}
+table.mycoms-info th {
+	width: 40%;
+	text-align: left;
+}
+table.mycoms-info td {
+	width:60%;
+	text-align: left;
+	color: #7f8c8d;
+}
+
+/* 마이콤스 끝 */
+
+.area-member-login img{
+	width: 60%;
+	height: auto;
+}
+.nav-register .span{
+	width:48%;
+	margin-right: 10px;
+}
+.nav-register .span:nth-child(2) {
+	margin-right: 0px;
+}
+.area-member-login p,
+.area-register p{
+	font-size: 11px;
+}
+.area-register textarea{
+	height: 300px;
+}
+.area-label{
+	width: 23%;
+	margin-right: 5px;
+	padding-top: 14px;
+	font-size: 12px;
+	font-weight: 900;
+}
+.area-input{
+	width: 75%;
+}
+.phone .area-input{
+	width: 23%;
+	margin-right: 5px;
+}
+.phone .area-input:nth-child(4){
+	margin-right: 0px;
+}
+
+.list-mycompon {
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 3px;
+}
+.list-mycompon .list-inner {
+	background-color: #fff;
+	border-radius: 5px;
+	padding:5px 5px 10px 5px;
+}
+.list-mycompon .used-compon {
+
+}
+.list-mycompon .img{
+	width:20%;
+	height:55px;
+	float: left;
+	margin-right:5px;
+	border-radius: 5px;
+}
+.banner-inner-coupon .compon-nums,
+.list-mycompon .compon-nums {
+	background-color: #2980b9;
+	border-radius: 6px;
+	padding: 1px 5px 2px 5px;
+	color: #fff;
+	text-shadow:none;
+	font-weight: bold;
+}
+
+.list-mycompon .name{
+	color: cornflowerblue;
+	border-bottom: 1px solid;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left:10px;
+}
+.list-mycompon .price{
+	font-size: 13px;
+	line-height: 20px;
+	margin-left:10px;
+}
+.list-mycompon .limit-date{
+	margin-left:10px;
+}
+.list-mycompon .combo-left{
+	padding: 2% 3%;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+	width: 18%;
+}
+.list-mycompon .compon-code{
+	border: 1px solid gray;
+	padding: 2% 3%;
+	border-radius: 5px;
+	margin-left:5px;
+	font-weight: bold;
+}
+.list-mycompon .foo{
+	margin-top:10px;
+}
+.unused-compon {
+	background-color: firebrick;
+}
+.used-compon {
+	background-color: gray;
+}
+.combo-notice {
+	text-align: center;
+	color: cornflowerblue;
+	font-weight: bold;
+	font-size: 13px;
+	width: 80%;
+}
+.combo-notice #next-combo{
+	font-weight: bolder;
+}
+.notice-phone{
+	font-size:15px;
+	margin-top: 10px;
+}
+.notice-phone i{
+	color:#fff;
+	background-color: gray;
+	border-radius: 5px;
+	padding: 5px;
+}
+.well {
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+
+
+html 							{-webkit-font-smoothing: antialiased;}
+pre 								{ white-space: pre-wrap; word-wrap: break-word; line-height: 0.95em; text-shadow: none; background-color: #d3d3d3; }
+div[data-role="content"]			{ background: #fff; }
+.content						{ font-size: 0.85em; text-align: justify;}
+.content h3						{ font-weight: bold;}
+.typewriter						{ font-size: 0.85em; background-color: #D3D3D3; font-family: Courier New !important; padding: 0 0.5em; text-shadow: none;}
+code								{ font-family: Courier New !important; font-size: 0.85em;}
+.spacer							{ margin-bottom: 2em;}
+.coll .ui-collapsible-contain .ui-btn-text
+								{ font-size: 0.9em; font-weight: normal;}								
+.coll .ui-collapsible-contain .apple-navbar-ui a
+								{ font-size: 0.8em;}
+.spriteContainer				{ height: 150px; position: relative;}							
+.sprite							{ position: relative; z-index: 11;}						
+.spriteBack						{ background-color: #44D5FE; display: block; height: 132px; left: 25px; position: relative; top: -125px; width: 300px; z-index: 10;}
+.spriteText						{ line-height: 75px;}
+.hi-res							{ width: 30px; height: 30px; background: url("examples/sprite_hi-res.png") no-repeat; margin-left: 70px;
+								        background-size: 150px 44px; 
+									 -o-background-size: 150px 44px;
+								-webkit-background-size: 150px 44px;
+								   -moz-background-size: 150px 44px;
+									-ms-background-size: 150px 44px;
+								  }								  
+.lo-res							{ width: 30px; height: 30px; background: url("examples/sprite_lo-res.png") no-repeat; margin: -30px 0 0 20px;}
+
+/* Bartender CSS-plugin, Version: 1.0 
+ * Last updated: 18.04.2012
+ * Copyright (c) 2012 Sven Franck, http://www.franckreich.de/
+ */
+ 
+/*  1. OVERRIDE SOME JQM CSS */
+.ui-footer													{ background: #000000; z-index:1000;}
+.ui-footer .ui-navbar										{ margin: 0; }
+.ui-btn-icon-top .ui-btn-inner .ui-icon, .ui-btn-icon-bottom .ui-btn-inner .ui-icon { margin-left: 0px;}
+.apple-navbar-ui a:link, .apple-navbar-ui a:visited, .apple-navbar-ui a:hover, .apple-navbar-ui a:active
+															{ text-decoration:  none;}
+.apple-navbar-ui li 											{ cursor: pointer; height: 44px; margin: 0 auto; width: 20%; text-align: center; vertical-align: middle; text-shadow: none !important; border: 0 none; padding-top:2px; position: relative; }
+.apple-navbar-ui a											{ background: none; padding: 0px; display: inline-block !important; position: static; border-left-width: 0;}
+.apple-navbar-ui .ui-icon-shadow 							{ -webkit-box-shadow: none; -moz-box-shadow: none;  box-shadow: none; }
+.apple-navbar-ui .ui-btn-inner 								{ position: relative; border: none; overflow: visible; padding: 0px !important; text-align: center;}
+.ui-body-c, .ui-overlay-c									{ background:#FFFFFF; }
+
+/*  2. BUTTON BACKGROUND .ui-icon  
+ *  IE7+8 */
+.apple-navbar-ui .ui-icon									{ position: absolute; background-color: transparent; background-image: none; height: 22px; margin: 0 0 22px; left: 0 !important; /* need to override JQM 1.1.*/ top: 0 !important; width: 100%; overflow: visible !important; z-index: -1;
+															  -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;
+															  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorStr=#40ffffff,EndColorStr=#12ffffff);zoom: 1; 															  
+															  }															  														 
+/*  all other  */															  
+.apple-navbar-ui  .ui-icon::before							{ width: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ""; display: block; height: 44px; z-index: 0;
+															  background-color: transparent; padding: 0.1em 0;        							
+															  background-image:         -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.15)), color-stop(0.5, rgba(255,255,255,.10)), color-stop(0.505, rgba(255,255,255,.0)), to(rgba(255,255,255,.0)));
+															  background-image:  -webkit-linear-gradient(top, rgba(255,255,255,.15) 0%, rgba(255,255,255,.10) 50%, rgba(255,255,255,.0) 50.5%, rgba(255,255,255,.0) 100%); 
+															  background-image:	     -ms-linear-gradient(top, rgba(255,255,255,.15) 0%, rgba(255,255,255,.10) 50%, rgba(255,255,255,.0) 50.5%, rgba(255,255,255,.0) 100%); 
+															  background-image: 	-moz-linear-gradient(top, rgba(255,255,255,.15) 0%, rgba(255,255,255,.10) 50%, rgba(255,255,255,.0) 50.5%, rgba(255,255,255,.0) 100%); 
+															  background-image:       -o-linear-gradient(top, rgba(255,255,255,.15) 0%, rgba(255,255,255,.10) 50%, rgba(255,255,255,.0) 50.5%, rgba(255,255,255,.0) 100%); 																					  
+															  background-image:          linear-gradient(top, rgba(255,255,255,.15) 0%, rgba(255,255,255,.10) 50%, rgba(255,255,255,.0) 50.5%, rgba(255,255,255,.0) 100%); 															  
+															}
+/*  3. ICON BACKGROUND .ui-btn */
+/*  IDLE = gray gradient */
+.apple-navbar-ui li .ui-btn 									{ background: none; display: inline-block; width: 30px; height: 30px;															   
+															  background-image:        		      -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#333));
+															  background-image: 		   -webkit-linear-gradient(bottom, #ccc, #333);
+															  background-image:         		   linear-gradient(bottom, #ccc, #333);
+															  background-image:	   			  -moz-linear-gradient(bottom, #ccc, #333);
+															  background-image:      		    -o-linear-gradient(bottom, #ccc, #333);
+															  background-image:	    		   -ms-linear-gradient(bottom, #ccc, #333);
+																filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#cccccc');
+																}																
+/*  HOVER, ACTIVE - blue gradient */																
+.apple-navbar-ui li:hover .ui-btn, .apple-navbar-ui li .ui-btn-active							
+															{ background-color: #fff;															
+															  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#44D5FE');
+															  background-image: 	-webkit-linear-gradient(center top, rgba(68,213,254,.0) 0%, rgba(68,213,254,.0) 23%, #44D5FE 100%), 
+																					-webkit-radial-gradient(100% 320%, circle farthest-corner, #317BDC 65%, #317BDC 78%, rgba(49,123,220,.0) 80%), 
+																					-webkit-radial-gradient(40% 190%, circle farthest-corner, #7DAAE7 30%, #E6EEFA 90%)/*, url("fallback_active.png")*/;
+															  background-image: 	       -webkit-gradient(linear, left top, left bottom, from( rgba(068,213,254,.0)), color-stop(.43, rgba(068,213,254,.0)), to( rgba(068,213,254,1))),
+																						   -webkit-gradient(radial, 60 162, 150, 60 162, 149, from(rgba(049,123,220,.0)), to( rgba(049,123,220,1))),
+																						   -webkit-gradient(radial, 20 -43, 60, 20 -43, 40, from(rgba(125,170,231,1)), to( rgba( 230,238,250,1)))/*, url("fallback_active.png")*/;
+															  background-image: 	        linear-gradient(center top, rgba(68,213,254,.0) 0%, rgba(68,213,254,.0) 23%, #44D5FE 100%), 
+																							radial-gradient(100% 320%, circle farthest-corner, #317BDC 65%, #317BDC 78%, rgba(49,123,220,.0) 80%), 
+																							radial-gradient(40% 190%, circle farthest-corner, #7DAAE7 30%, #E6EEFA 90%)/*, url("fallback_active.png")*/;
+															  background-image: 	   -moz-linear-gradient(center top, rgba(68,213,254,.0) 0%, rgba(68,213,254,.0) 23%, #44D5FE 100%), 
+																					   -moz-radial-gradient(100% 320%, circle farthest-corner, #317BDC 65%, #317BDC 78%, rgba(49,123,220,.0) 80%), 
+																					   -moz-radial-gradient(40% 190%, circle farthest-corner, #7DAAE7 30%, #E6EEFA 90%)/*, url("fallback_active.png")*/;																					 																
+															  background-image: 	    -ms-linear-gradient(center top, rgba(68,213,254,.0) 0%, rgba(68,213,254,.0) 23%, #44D5FE 100%), 
+																						-ms-radial-gradient(100% 320%, circle farthest-corner, #317BDC 65%, #317BDC 78%, rgba(49,123,220,.0) 80%), 
+																						-ms-radial-gradient(40% 190%, circle farthest-corner, #7DAAE7 30%, #E6EEFA 90%)/*, url("fallback_active.png")*/;														  
+															  background-image: 	     -o-linear-gradient(top, rgba(68,213,254,.0) 0%, rgba(68,213,254,.37) 23%, #44D5FE 100%)/*, 
+															  not supported *//*      -o-radial-gradient(100% 320%, circle farthest-corner, #317BDC 65%, #317BDC 78%, rgba(49,123,220,.0) 80%), 
+																				         -o-radial-gradient(40% 190%, circle farthest-corner, #7DAAE7 30%, #E6EEFA 90%)*//*, url("fallback_active.png")*/;																																									
+															  }																													
+/*  4. TEXT .ui-btn-text  
+ * IMPROVE: vertical-align does not work, as ui-btn-inner needs display:block. Line-height is used to move text down - find a better way  
+ */
+.apple-navbar-ui li a .ui-btn-text 							{ color: #999999; font-weight: bold; letter-spacing: 1px; font-size: 0.8em; left: 0; text-decoration: none !important; display: block;	position: absolute; top: -1px;  width: 100%; padding-bottom: 2px; padding-top: 34px;}
+.apple-navbar-ui li:hover .ui-btn-text, .apple-navbar-ui .ui-btn-active .ui-btn-text
+															{ color: #fff; }
+
+
+/*	5. HIGHLIGHT.ui-btn-text
+ *  all browsers */																							
+.apple-navbar-ui li:hover .ui-btn-text, .apple-navbar-ui li .ui-btn-active .ui-btn-text						
+															{-moz-border-radius: .6em; -webkit-border-radius: .6em; border-radius: .6em; background-color: transparent; background-color: rgba(255,255,255,0.14); 
+															  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#23FFFFFF,endColorstr=#23FFFFFF);zoom: 1; /* IE6��E9 */
+															  }													  
+/* IE9 dummy-HACK */
+.apple-navbar-ui li:hover a:not([dummy]) .ui-btn-text, .apple-navbar-ui .ui-btn-active:not([dummy]) .ui-btn-text			
+															{ filter: progid:DXImageTransform.Microsoft.gradient(enabled='false');}
+															  
+															  
+															 										
+/*   6. ICON SPRITE .ui-btn-inner  
+ * IMPROVE: check to see if these are necessary 
+ */  
+.apple-navbar-ui li a[data-icon="features"] .ui-btn-inner 		{ /* IE7 */ background-position-x:    0px; /* IE8+ */ -ms-background-position-x:    0px; }
+.apple-navbar-ui li a[data-icon="brands"] .ui-btn-inner 		{ /* IE7 */ background-position-x:  -60px; /* IE8+ */ -ms-background-position-x:  -60px; }
+.apple-navbar-ui li a[data-icon="fees"] .ui-btn-inner 			{ /* IE7 */ background-position-x:  -30px; /* IE8+ */ -ms-background-position-x:  -30px; }
+.apple-navbar-ui li a[data-icon="contact"] .ui-btn-inner 		{ /* IE7 */ background-position-x:  -90px; /* IE8+ */ -ms-background-position-x:  -90px; }
+.apple-navbar-ui li a[data-icon="about"] .ui-btn-inner			{ /* IE7 */ background-position-x: -120px; /* IE8+ */ -ms-background-position-x: -120px; }
+.apple-navbar-ui li a 	.ui-btn-inner							{ /* IE7 */ background-position-y:    0px; /* IE8+ */ -ms-background-position-y:    0px /* !important*/; }
+ 
+ 
+/* ================ SINGLE CSS-SPRITE ====================== */
+/*
+ *   7a. SINGLE
+ * 
+ *   ISSUE: icons on IE9+ are "off" by 1px. Somehow both backgrounds on ui-icon get rendered and the ::before background is being cut off at 22px
+ *          could be because IE-filter causes overflow:hidden. 
+ *			workaround (a) Try to show normal icons on IE9+ = change -ms-background-position-y to 0px !important AND set background-size to 0 0 or 300px 132px for IE9+ only
+ *			workaround (b) Solve overflow:hidden problem (if that is the cause)
+ */
+
+.comboSprite li a 	.ui-btn-inner							{ display: inline-block; position: static; height: 30px; width: 30px; background-color: none; background: url("sprite_combined.png") no-repeat; 
+																	  background-size: 150px 66px; 
+																   -o-background-size: 150px 66px;
+															  -webkit-background-size: 150px 66px;
+															     -moz-background-size: 150px 66px;
+																  -ms-background-size: 150px 66px;
+																}													
+
+.comboSprite li a[data-icon="brands"] span:only-child  	{ background-position:    0px -22px }
+.comboSprite li a[data-icon="contact"] span:only-child   		{ background-position:  -30px -22px }
+.comboSprite li a[data-icon="fees"] span:only-child		{ background-position:  -60px -22px }
+.comboSprite li a[data-icon="features"] span:only-child		{ background-position:  -90px -22px }
+.comboSprite li a[data-icon="about"] span:only-child		{ background-position: -120px -22px }	
+
+/* ================ END SINGLE =============================== */
+
+
+/* ============= SEPERATE CSS-SPRITES  ======================= */
+
+/*   7b. SEPERATE */
+
+/*   REGULAR  */
+
+
+.soloSprite li a .ui-btn-inner							{ display: inline-block; position: static; height: 30px; width: 30px; background-color: none; background: url("sprite_lo-res.png") no-repeat; 
+																      background-size: 300px 44px; 
+																   -o-background-size: 300px 44px;
+															  -webkit-background-size: 300px 44px;
+															     -moz-background-size: 300px 44px;
+																  -ms-background-size: 300px 44px;	
+																  }
+																  
+.soloSprite li a[data-icon="features"] span:only-child  	{ background-position:    0px 0px }
+.soloSprite li a[data-icon="brands"] span:only-child		{ background-position:  -60px 0px }
+.soloSprite li a[data-icon="fees"] span:only-child   		{ background-position:  -30px 0px }
+.soloSprite li a[data-icon="contact"] span:only-child		{ background-position:  -90px 0px }
+.soloSprite li a[data-icon="about"] span:only-child		{ background-position: -120px 0px }	
+
+
+.soloSprite .ui-icon::before							{ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorStr=#40ffffff,EndColorStr=#12ffffff);zoom: 1; 				 
+															  background-image:         -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.15)), to(rgba(255,255,255,.0)));
+															  background-image:  -webkit-linear-gradient(top, rgba(255,255,255,.25) 0%, rgba(255,255,255,.07) 48%, rgba(255,255,255,.0) 48.5%, rgba(255,255,255,.0) 100% ); 
+															  background-image:	     -ms-linear-gradient(top, rgba(255,255,255,.25) 0%, rgba(255,255,255,.07) 48%, rgba(255,255,255,.0) 48.5%, rgba(255,255,255,.0) 100% ); 
+															  background-image: 	-moz-linear-gradient(top, rgba(255,255,255,.25) 0%, rgba(255,255,255,.07) 48%, rgba(255,255,255,.0) 48.5%, rgba(255,255,255,.0) 100% ); 
+															  background-image:       -o-linear-gradient(top, rgba(255,255,255,.25) 0%, rgba(255,255,255,.07) 48%, rgba(255,255,255,.0) 48.5%, rgba(255,255,255,.0) 100% ); 																					  
+															  background-image:          linear-gradient(top, rgba(255,255,255,.25) 0%, rgba(255,255,255,.07) 48%, rgba(255,255,255,.0) 48.5%, rgba(255,255,255,.0) 100% ); 	
+															  }
+
+ 
+ /* RETINA */
+
+
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 240dpi) {
+	
+	  .soloSprite li a .ui-btn-inner							{ display: inline-block; position: static; height: 30px; width: 30px; background-color: none; background: url("sprite_hi-res.png") no-repeat; 
+																		   background-size: 150px 66px; 
+																		-o-background-size: 150px 66px;
+																   -webkit-background-size: 150px 66px;
+																	  -moz-background-size: 150px 66px;
+																	   -ms-background-size: 150px 66px;		
+																	  }																 
+																
+	.soloSprite li a[data-icon="features"] span:only-child  	{ background-position:    0px -22px }
+	.soloSprite li a[data-icon="brands"] span:only-child   		{ background-position:  -60px -22px }
+	.soloSprite li a[data-icon="fees"] span:only-child     		{ background-position:  -30px -22px }
+	.soloSprite li a[data-icon="contact"] span:only-child   	{ background-position:  -90px -22px }
+	.soloSprite li a[data-icon="about"] span:only-child    		{ background-position: -120px -22px }	  
+	}
+
+/* ============= END SEPARATE ========================== */
+
+											
+/*   8. Notification Icons .ui-li-count */ 
+.apple-navbar-ui li a .ui-li-count								{ color: #ffffff; /* right: 0.5em; JQM 1.1 removed */ font-size: 90%; text-shadow: none; font-weight: bold; font-family: arial; 
+															  -moz-box-shadow: 0 1px 2px #999; -webkit-box-shadow: 0 1px 2px #999; box-shadow: 0 1px 2px #999; /* padding-bottom: 1px; JQM 1.1 removed */ padding: 0 2px 1px 3px;
+															  border: 0.15em solid #ffffff; border-radius: 14px; -moz-border-radius: 14px; -webkit-border-radius: 14px; background-color: #72b0d4; 
+															  line-height: 16px; display: inline-block; background-position: 0 0 !important; margin-right: 38%; margin-top: 3px; /* - JQM 1.1 changed */ position: absolute; /* JQM 1.1 added */
+															  
+															  background-image:        		      -webkit-gradient(linear,left top,left bottom, color-stop(0,#72b0d4),color-stop(1,#4b88b6)); 
+															  background-image: 		   -webkit-linear-gradient(top, #72b0d4, #4b88b6);
+															  background-image:         		   linear-gradient(top, #72b0d4, #4b88b6);
+															  background-image:	   			  -moz-linear-gradient(top, #72b0d4, #4b88b6);
+															  background-image:      		    -o-linear-gradient(top, #72b0d4, #4b88b6);
+															  background-image:	    		   -ms-linear-gradient(top, #72b0d4, #4b88b6);
+																filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#72b0d4', EndColorStr='#4b88b6');
+															-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#72b0d4', EndColorStr='#4b88b6')";
+															  }
+
+
+.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; background-size: 100%!important }
+
+#mycoms .ui-icon { background:  url(../img/glyphish-icons/btn-mycoms.png) 50% 50% no-repeat; background-size: 100px 100px; }
+#coms .ui-icon { background:  url(../img/glyphish-icons/btn-coms.png) 50% 50% no-repeat; background-size: 100px 100px;  }
+#friend .ui-icon { background:  url(../img/glyphish-icons/btn-friends.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+#comstory .ui-icon { background:  url(../img/glyphish-icons/btn-compons.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+#setting .ui-icon { background:  url(../img/glyphish-icons/btn-setting.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+

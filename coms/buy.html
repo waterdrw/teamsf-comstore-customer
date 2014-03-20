@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>콤스토리</title>
+<link rel="stylesheet" href="../css/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/iscroll.css"/>
+<link rel="stylesheet" href="../css/font-awesome.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="../js/params.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="../js/loginHandler.js"></script>
+<script type="text/javascript" src="./js/buy.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>콤템 발급하기</h1>
+        <a href="./index.html" data-ajax="false" class="ui-btn-right btn-custom-back" data-role="button"><i class="icon-remove"></i></a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+    <div id="wrapper" class="content-near-shop">
+        <div class="notice-near-shop">
+            <p><i class="icon-asterisk"></i> 콤템(콤보쿠폰)은 콤보 달성에 따라 단골할인 혜택을 받을 수 있는 할인권으로, 콤보 달성을 위한 승인권 입니다.</p>
+            <p><i class="icon-asterisk"></i> 목표 금액 이용시에 할인혜택을 받을 수 있으니 이용하실 예상 금액에 따라 콤템을 알맞게 선택하여 발급 받으세요.</p>
+        </div>
+        <div class="area-notice" style="text-align:center;">아래의 콤템 유형(목표 이용 금액)을 선택하세요.</div>
+        <div class="row area-padding">
+            <div class="span banner-coupon" value="0">
+                <div class="banner-inner-coupon">
+                    <span id="compon1"></span> 만원
+                    <hr><span id="compon-1-name">솔로 콤템</span><hr>
+                </div>
+            </div>
+            <div class="span banner-coupon" value="1">
+                <div class="banner-inner-coupon">
+                    <span id="compon2"></span> 만원
+                    <hr><span id="compon-2-name">커플 콤템</span><hr>
+                </div>
+            </div>
+            <div class="span banner-coupon" value="2">
+                <div class="banner-inner-coupon">
+                    <span id="compon3"></span> 만원
+                    <hr><span id="compon-3-name">단체 콤템</span><hr>
+                </div>
+            </div>
+            <div class="span banner-coupon" value="3">
+                <div class="banner-inner-coupon">
+                    <span id="compon4"></span> 만원
+                    <hr><span id="compon-4-name">회식 콤템</span><hr>
+                </div>
+            </div>
+        </div>
+        <div class="area-divider"><i class="icon-arrow-right"></i> 선택한 콤템의 할인 금액을 확인하세요.</div>
+        <div class="area-padding">
+            <div class="banner-coupon2 active main">
+                <div class="banner-inner-coupon row">
+                    <div class="span"><img id="compon-image" src="./img/img-shop-profile1.jpg"></div>
+                    <div class="span">
+                        <p id="shop-name"></p>
+                        <p><span class="buy-price"></span>원 이상 이용시 <span class="buy-discount-price"></span>원 할인템</p>
+                        <p><span class='compon-nums' id="combo-count"></span> 콤보 / <span class='compon-nums' id="price-discount"></span>% 할인</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area-padding area-price-info">
+            <p><span id="combo"></span>콤보(<span id="discount"></span>%) 가 적용된 할인액은 아래와 같습니다.</p>
+            <p>할인금액 : <span class="buy-discount-price"></span>원 (<span class="buy-price"></span>원 이용시)</p>
+            <a id="btn-credit" href="#" data-role="button" data-theme="b">
+            	<!--<i class="icon-credit-card"></i>-->콤보할인템 발급받기
+            </a>
+            
+            <!-- <p>콤스 스타일 -> 당일 구매, 당일 사용 하기!</p> -->
+        </div>
+        <input type="hidden" id="compon-num" value="">
+    </div><!-- /content -->
+    </div>
+    
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤템함</a></li>
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스랭킹</a></li>                
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
+        </div>
+    </div>         
+</div><!-- /page -->
+
+<script type="text/javascript">initPhonegap();</script>
+</body>
+</html>
+

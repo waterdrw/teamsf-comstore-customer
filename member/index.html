@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>콤스토리</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/iscroll.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/loginHandler.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="./js/login.js"></script>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- LOGIN MAIN PAGE -->
+<div id="page-login" data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>로그인</h1> 
+        <a href="../coms/index.html" data-ajax="false" class="ui-btn-right" data-role="button"><i class="icon-remove"></i></a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <div class="area-padding area-member-login">
+            <form>
+                <input type="text" name="email" id="usr-email" placeholder="이메일 아이디">
+                <input type="password" name="passwd" id="usr-passwd" placeholder="비밀번호">
+                <a data-role="button" id="btn-login" data-theme="b">로그인</a>                
+            </form>
+            <p class="area-notice text-center">아직 콤스 회원이 아니신가요?</p>
+            <a href="#page-lost-found-id" data-role="button" data-theme="a">아이디/비밀번호 찾기</a>
+            <a href="./register.html" data-role="button" data-ajax="false" data-theme="a">콤스 회원가입</a>
+            <div class="text-center"><img src="../img/logo-coms.png"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ID LOST-AND-FOUND PAGE -->
+<div id="page-lost-found-id" data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>아이디/비밀번호 찾기</h1> 
+        <a href="./index.html" data-ajax="false" class="ui-btn-right" data-role="button"><i class="icon-remove"></i></a>
+        <div data-role="navbar" class="custom-navbar">
+        <ul>
+            <li><a data-ajax="false" href="#page-lost-found-id" class="ui-btn-active ui-state-persist">아이디 찾기</a></li>
+            <li><a data-ajax="false" href="#">비밀번호 찾기</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <div class="area-padding">
+            <div class="row">
+                <div class="span area-label">이름</div>
+                <div class="span area-input"><input type="text" id="txt-id-name" placeholder="이름을 입력해주세요."></div>
+            </div>
+            <hr>
+            <div class="row phone">
+                <div class="span area-label">휴대폰 번호</div>
+                <div class="span area-input"><input type="text" id="txt-id-phone1" placeholder="010" value="010"></div>
+                <div class="span area-input"><input type="text" id="txt-id-phone2" placeholder=""></div>
+                <div class="span area-input"><input type="text" id="txt-id-phone3" placeholder=""></div>
+            </div>
+            <hr>
+            <div class="row">
+            	<a id="btn-find-id" data-role="button" data-theme="b">아이디 찾기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PW LOST-AND-FOUND PAGE -->
+<div id="page-lost-found-pw" data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>아이디/비밀번호 찾기</h1> 
+        <a href="./index.html" data-ajax="false" class="ui-btn-right" data-role="button"><i class="icon-remove"></i></a>
+        <div data-role="navbar" class="custom-navbar">
+        <ul>
+            <li><a data-ajax="false" href="#">아이디 찾기</a></li>
+            <li><a data-ajax="false" href="#page-lost-found-pw" class="ui-btn-active ui-state-persist">비밀번호 찾기</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <div class="area-padding">
+            <div class="row">
+                <div class="span area-label">이름</div>
+                <div class="span area-input"><input type="text" id="txt-pw-name" placeholder="이름을 입력해주세요."></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="span area-label">이메일아이디</div>
+                <div class="span area-input"><input type="text" id="txt-pw-email" placeholder="이메일 아이디를 입력해주세요."></div>
+            </div>
+            <div class="row phone">
+                <div class="span area-label">휴대폰 번호</div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone1" placeholder="010" value="010"></div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone2" placeholder=""></div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone3" placeholder=""></div>
+            </div>
+            <div class="row">
+            	<a id="btn-find-pw" data-role="button" data-theme="b">이메일로 비밀번호 받기</a>
+            </div>
+            <div class="row">
+            	<p><i class="icon-asterisk"></i> 회원 가입시 등록한 메일주소로 임시 비밀번호가 전송됩니다.</p>
+            	<p><i class="icon-asterisk"></i> 새로 발급된 비밀번호는 임시 비밀번호로 로그인 후 반드시 설정 메뉴를 통해 비밀번호를 변경하세요.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">initPhonegap();</script>
+</body>
+</html>
+

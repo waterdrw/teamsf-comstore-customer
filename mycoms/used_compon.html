@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>콤스토리</title>
+<link rel="stylesheet" href="../css/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/iscroll.css"/>
+<link rel="stylesheet" href="../css/font-awesome.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="../js/params.js"></script>
+<script type="text/javascript" src="../js/loginHandler.js"></script>
+<script type="text/javascript" src="./js/used_compon.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>콤템 함</h1>
+        <a href="./index.html" class="ui-btn-right" data-ajax="false" data-rel="dialog"><i class="icon-remove"></i></a>
+        <div data-role="navbar" class="custom-navbar">
+        <ul>
+            <li><a data-ajax="false" href="./compon.html">미사용 콤템</a></li>
+            <li><a data-ajax="false" href="./used_compon.html" class="ui-btn-active">승인대기 콤템</a></li>
+        </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div data-role="content">        
+        <div class="content-compon">
+            <div class="notice-near-shop">
+                <p><i class="icon-asterisk"></i> 사용하신 콤보할인템은 승인 대기 중으로, 상점 이용 후 승인을 완료 받으셔야 콤보가 달성됩니다.</p>
+                <p><i class="icon-asterisk"></i> 승인이 완료된 콤보할인템은 자동으로 삭제되고, 다음 단계의 콤보할인률이 적용된 콤보할인템을 다시 발급 받으실 수 있습니다.</p>
+            </div>
+            <div class="area-divider"><i class="icon-arrow-right"></i> 사용하신 콤보할인템의 승인 상태를 확인하세요.</div>
+            <div id="container"></div>
+        </div><!-- /content -->
+    </div>
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" class="ui-btn-active ui-state-persist" data-ajax="false">콤템함</a></li>
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스랭킹</a></li>                
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
+        </div>
+    </div>      
+</div><!-- /page -->
+
+<script type="text/javascript">initPhoneGap();</script>
+</body>
+</html>
+
